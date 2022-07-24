@@ -1,7 +1,13 @@
 .card-fragment {
     display: flex;
-    width: 90vw;
-    height: 90vh;
-    background-color: #DDD;
+    background-color: #eaeaea;
+    box-shadow: 0 0 15px #828282;
     border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    flex-grow: 1;
+
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: stretch;
 }

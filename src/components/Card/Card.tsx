@@ -1,13 +1,14 @@
 import './Card.scss'
-import logo from '../../logo.svg';
+import React, { ReactNode } from 'react';
 
-const Card = () => {
+export interface CardProps {
+  children: ReactNode
+}
+
+const Card = (props: CardProps) => {
     return (
         <div className="card-fragment">
-             <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Emergency Card. Work In Progress. Contact me if you are interested by this project.
-        </p>
+           {props.children}
         </div>
     )
 }
