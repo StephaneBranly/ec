@@ -1,4 +1,6 @@
 export type MedicalInformation = {
+    weight?: number
+    height?: number
     bloodType?: 'A' | 'B' | 'AB' | 'O';
     bloodRH?: '+' | '-';
     allergies?: string;
