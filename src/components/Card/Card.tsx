@@ -7,9 +7,9 @@ export interface CardProps {
 
 const Card = (props: CardProps) => {
     return (
-        <div className="card-fragment">
+        <section className="card-fragment">
            {props.children}
-        </div>
+        </section>
     )
 }
 
