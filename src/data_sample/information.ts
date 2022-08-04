@@ -8,6 +8,10 @@ const informationSample: Information = {
             'address': '1 rue de la paix',
             'nationality': 'FR',
             'dateOfBirth': new Date(1986, 4, 12),
+        },
+        'medicalInformation':  {
+            'bloodRH': '+',
+            'bloodType': 'O',
         }
     }
 }

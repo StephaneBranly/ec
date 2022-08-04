@@ -6,6 +6,5 @@ export type MedicalInformation = {
     allergies?: string;
     medications?: string;
     medicalHistory?: string;
-    surgeries?: string;
     notes?: string;
 }
