@@ -1,0 +1,23 @@
+.section-fragment {
+    display: flex;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px;
+    flex-grow: 1;
+    border: 3px solid #313131;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.section-fragment .section-title {
+    padding: 0 10px;
+    margin: 0;
+    background-color: #eaeaea;
+    position: relative;
+    top: -40px;
+    left: 0;
+    width: min-content;
+    color: #313131;
+}

@@ -5,6 +5,7 @@ import { isEmpty, has } from 'lodash';
 import Moment from 'moment';
 import Flag from 'react-world-flags'
 import iso3311a2 from 'iso-3166-1-alpha-2'
+import Section from '../Section/Section';
 
 export interface InformationProps {
     information: InformationType
@@ -14,12 +15,12 @@ const Information = (props: InformationProps) => {
 
     const displayInformation = () => {
         if(has(information, 'individu.identity')) {
-            return <div className='information-identity'>
+            return <Section title='Identity'>
                 {displayName()}
                 {displayDateOfBirth()}
                 {displayAddress()}
                 {displayNationality()}
-            </div>
+            </Section>
         }
         return <div>Empty Emergency Card. If it's an emergency, don't waste your time and find an other solution to identify the victim.</div>
     }
